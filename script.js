@@ -15,13 +15,13 @@ const title = document.querySelector('.app__title')
 
 // musica
 const musicFocoInput = document.querySelector('#alternar-musica')
-const music = new Audio('/sons/luna-rise-part-one.mp3') 
+const music = new Audio('./sons/luna-rise-part-one.mp3') 
 music.loop = true;
 
 //sons
-const musicPlay = new Audio('/sons/play.wav')
-const musicPause = new Audio('/sons/pause.mp3')
-const musicTempoFinalizado = new Audio('/sons/beep.mp3')
+const musicPlay = new Audio('./sons/play.wav')
+const musicPause = new Audio('./sons/pause.mp3')
+const musicTempoFinalizado = new Audio('./sons/beep.mp3')
 
 // Variável que vai armazenar o temporizador
 let tempoDecorridoEmSegundos = 1500;
@@ -72,7 +72,7 @@ function alterarContexto(contexto) {
         contexto.classList.remove('active')
     })
     html.setAttribute('data-contexto', contexto) 
-    banner.setAttribute('src', '/imagens/' + contexto + '.png')
+    banner.setAttribute('src', './imagens/' + contexto + '.png')
     switch(contexto) {
         case "foco":
             title.innerHTML = 'Otimize sua produtividade,<br> <strong class="app__title-strong">mergulhe no que importa.</strong>'
