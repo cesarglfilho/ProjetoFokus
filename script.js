@@ -10,7 +10,7 @@ const botoes = document.querySelectorAll('.app__card-button')
 // imagens
 const banner = document.querySelector('.app__image')
 
-// texto
+
 const title = document.querySelector('.app__title')
 
 // musica
